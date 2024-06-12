@@ -16,8 +16,7 @@ import {
 import "./list.css";
 
 const EmployeeList = () => {
-  const apiURL =
-    process.env.REACT_APP_API_URL_ACTIONS || "REACT_APP_API_URL_ACTIONS";
+  const apiURL = process.env.REACT_APP_API_URL_ACTIONS;
   const employees = useSelector((state) => state.employees);
   const dispatch = useDispatch();
   const navigate = useNavigate();

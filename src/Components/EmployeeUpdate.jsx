@@ -5,8 +5,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { TextField, Button, Paper, Typography, Avatar } from "@mui/material";
 
 const EmployeeUpdate = () => {
-  const apiURL =
-    process.env.REACT_APP_API_URL_ACTIONS || "REACT_APP_API_URL_ACTIONS";
+  const apiURL = process.env.REACT_APP_API_URL_ACTIONS;
   const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
