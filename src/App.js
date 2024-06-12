@@ -25,7 +25,6 @@ const App = () => {
 
   const dispatch = useDispatch();
   const [state, setState] = useState([]);
-  console.log(state);
   const apiURL = process.env.REACT_APP_API_URL_EMPLOYEES;
 
   const getEmployees = async () => {
