@@ -42,7 +42,7 @@ const EmployeeUpdate = () => {
   return (
     <Paper style={{ padding: 16 }}>
       <Typography variant="h4">
-        <Avatar src={employee.image} alt={employee.employee_name} />
+        <Avatar src={employee.profile_image} alt={employee.employee_name} />
         {employee.employee_name}
       </Typography>
       <form onSubmit={handleSubmit}>
@@ -58,6 +58,14 @@ const EmployeeUpdate = () => {
           name="employee_salary"
           label="salary"
           value={employee?.employee_salary}
+          onChange={handleChange}
+          fullWidth
+          margin="normal"
+        />
+        <TextField
+          name="employee_age"
+          label="age"
+          value={employee?.employee_age}
           onChange={handleChange}
           fullWidth
           margin="normal"
